@@ -1,0 +1,12 @@
+<div class="user-container" [routerLink]="['/userDetails', userData.id]">
+   <img class="user-image" [src]="userData.avatar" alt="user image">
+   <div class="user-details">
+      <div class="user-name">
+         <span>{{ userData.first_name }}</span>
+         <span>{{ userData.last_name }}</span>
+      </div>
+      <div class="user-email">
+         <span>{{userData.email}}</span>
+      </div>
+   </div>
+</div>

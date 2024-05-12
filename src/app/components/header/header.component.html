@@ -1,0 +1,16 @@
+<div class="header">
+  <div class="container">
+    <input class="input-search" type="text" [(ngModel)]="searchInput" (input)="searchUser()"
+      placeholder="Enter User ID">
+    <div id="result" *ngIf="showResult">
+      <div class="result-container" *ngIf="user" [routerLink]="['/userDetails', user.id]" (click)="closeResult()">
+        <img class="user-image" [src]="user.avatar" alt="user image">
+        <div class="user-name">
+          <span>{{ user.first_name }}</span>
+          <span>{{ user.last_name }}</span>
+        </div>
+      </div>
+      <div class="no-result-container" *ngIf="!user">No data found</div>
+    </div>
+  </div>
+</div>

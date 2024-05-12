@@ -1,0 +1,8 @@
+<app-user-card *ngFor="let user of usersToShow; let i= index;" class="user-data col-lg-2 col-md-3 col-sm-4 col-xs-6"
+   [userData]="user"></app-user-card>
+<mat-progress-bar class="w-50" mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
+<div class="paginator-bottom">
+   <mat-paginator *ngIf="!isLoading" #paginator class="paginator" (page)="handlePageEvent($event)" [length]="length"
+      [showFirstLastButtons]="showFirstLastButtons" [pageSizeOptions]="pageSizeOptions" [pageIndex]="pageIndex">
+   </mat-paginator>
+</div>

@@ -1,0 +1,45 @@
+.container-user-details {
+  border: 1px solid #d3d3d3;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-image {
+  width: 180px;
+  height: 180px;
+}
+
+.user-name {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.user-name span {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+.user-email span {
+  font-size: 18px;
+  font-weight: 400;
+  color: #00000060;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title span {
+  font-size: 18px;
+  font-weight: 400;
+  color: #00000060;
+  cursor: pointer;
+}
